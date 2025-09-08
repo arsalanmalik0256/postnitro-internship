@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@mantine/core": "7.17.4",
-    "@mantine/hooks": "7.17.4",
+    "@mantine/core": "^7.17.8",
+    "@mantine/hooks": "^7.17.8",
     "@phosphor-icons/react": "^2.1.7",
+    "@tabler/icons-react": "^3.34.1",
+    "i18next": "^25.5.2",
     "next": "15.2.4",
-    "next-intl": "4.0.2",
+    "next-intl": "^4.3.6",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },
@@ -26,6 +28,7 @@
     "postcss": "^8.5.3",
     "postcss-preset-mantine": "1.17.0",
     "postcss-simple-vars": "^7.0.1",
+    "tabler-icons-react": "^1.56.0",
     "typescript": "5.8.2"
   },
   "packageManager": "yarn@4.7.0"
