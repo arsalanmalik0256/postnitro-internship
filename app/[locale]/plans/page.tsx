@@ -6,7 +6,7 @@ export default function HomePage() {
 		<>
 			<Navbar/>
 
-			<Title>HELLO</Title>
+			<Title>ggggg</Title>
 		</>
 	);
 }
