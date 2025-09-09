@@ -6,6 +6,8 @@ import {
   mantineHtmlProps,
 } from "@mantine/core";
 import { theme } from "../theme";
+import { NextIntlClientProvider } from "next-intl";
+import Navbar from "./components/Navbar"
 
 export const metadata = {
   title: "Mantine Next.js template",
@@ -24,7 +26,12 @@ export default function RootLayout({ children }: { children: any }) {
         />
       </head>
       <body>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <NextIntlClientProvider>
+          <MantineProvider theme={theme}>
+            <Navbar />
+            {children}
+          </MantineProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

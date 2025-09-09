@@ -9,7 +9,7 @@
 
 .logo a {
   text-decoration: none;
-  color: #111;
+  color: #ededed;
   font-weight: 700;
   font-size: 20px;
 }
@@ -24,7 +24,7 @@
 .bar {
   width: 24px;
   height: 2px;
-  background: #111;
+  background: #ffffff;
 }
 
 .menu ul {
@@ -37,12 +37,12 @@
 
 .menu a {
   text-decoration: none;
-  color: #333;
+  color: #fefefe;
 }
 
 .create-btn {
   padding: 8px 14px;
-  background: #111;
+  background: #dfdfdf;
   color: #fff;
   border: none;
   border-radius: 6px;

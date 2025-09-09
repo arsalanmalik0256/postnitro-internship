@@ -1,3 +1,4 @@
+"use client";
 import { Title } from '@mantine/core';
 import React from 'react';
 
@@ -5,7 +6,7 @@ import React from 'react';
 export default function HomePage() {
 	return (
 		<>
-			<Title>HELLO</Title>
+			<Title>HELLO world</Title>
 		</>
 	);
 }
