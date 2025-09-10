@@ -22,7 +22,7 @@ export default function Herosection() {
 					AI-Powered Carousel Generator for Viral Content
 				</Badge>
 
-				<Text size="xl"
+				<Text size="2rem"
 					lineClamp={2}
 					fw={900}
 					variant="gradient"
@@ -117,7 +117,7 @@ export default function Herosection() {
 				</Group>
 				<Button
 					variant="filled"
-					color="#00C08B"
+					color="#087A68"
 					size="xl"
 					radius="md"
 					rightSection={

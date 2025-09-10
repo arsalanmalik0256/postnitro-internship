@@ -2,13 +2,13 @@
 
 import React from 'react';
 import { Group, Menu, Button, Badge } from '@mantine/core';
-import { SparkleIcon } from '@phosphor-icons/react';
+import { CaretDownIcon, SparkleIcon } from '@phosphor-icons/react';
 import { IconSettings, IconMessageCircle, IconPhoto } from '@tabler/icons-react';
 // import LanguageSwitcher from './LanguageSwitcher';
 
 const Navbar: React.FC = () => {
 	return (
-		<Group justify="space-between" m={10}>
+		<Group justify="space-between" mx={30} mt={10}>
 			{/* Top bar (Header) */}
 			<Group >
 				{/* Logo */}
@@ -37,6 +37,9 @@ const Navbar: React.FC = () => {
 							size="sm"
 							variant="subtle"
 							color="black"
+							rightSection={
+								<CaretDownIcon size={20} color="black" weight="thin" />
+							}
 						>Getting Started</Button>
 					</Menu.Target>
 
@@ -72,6 +75,9 @@ const Navbar: React.FC = () => {
 						<Button size="sm"
 							variant="subtle"
 							color="black"
+							rightSection={
+								<CaretDownIcon size={20} color="black" weight="thin" />
+							}
 						>Products</Button>
 					</Menu.Target>
 
@@ -108,6 +114,9 @@ const Navbar: React.FC = () => {
 							size="sm"
 							variant="subtle"
 							color="black"
+							rightSection={
+								<CaretDownIcon size={20} color="black" weight="thin" />
+							}
 						>Free Tools</Button>
 					</Menu.Target>
 
@@ -144,13 +153,13 @@ const Navbar: React.FC = () => {
 				{/* <LanguageSwitcher /> */}
 				<Button
 					variant="default"
-					color="rgba(255, 255, 255, 0)"
+					color="#087A68"
 					size="sm"
 					leftSection={
 						<SparkleIcon color="teal" weight="bold" />
 					}
 					rightSection={<Badge
-						color="blue"
+						color="green"
 						size="sm"
 					>beta</Badge>}
 				>
@@ -160,7 +169,7 @@ const Navbar: React.FC = () => {
 					variant="filled"
 					size="sm"
 
-					color="teal"
+					color="#087A68"
 					leftSection={<SparkleIcon color="white" weight="bold" />}
 				>Create Carousel</Button>
 			</Group>
