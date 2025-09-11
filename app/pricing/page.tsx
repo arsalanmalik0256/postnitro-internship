@@ -102,7 +102,7 @@ export default function PricingPlans() {
 
 				{/* ✅ Show discount badge only when yearly is selected */}
 				{billingCycle === "yearly" && (
-					<Badge color="#087A68" variant="filled" size="sm" sx={{ mt: 5 }}>
+					<Badge color="#087A68" variant="filled" size="sm" mt={5}>
 						30% OFF ON YEARLY SUBSCRIPTION! - ANNUAL30OFF
 					</Badge>
 				)}
@@ -125,8 +125,8 @@ export default function PricingPlans() {
 							minHeight: plan.highlight ? 520 : 460,
 							// ✅ Shadow style (green for highlight, normal grey for others)
 							boxShadow: plan.highlight
-								? "15px 0 25px -10px rgba(0, 128, 0, 0.4)"
-								: "0 2px 5px rgba(0,0,0,0.1)",
+								? "15px 0 25px -10px rgba(0, 128, 0, 1.0)"
+								: "0 2px 5px rgba(0,0,0,1.0)",
 						}}
 					>
 						<Stack gap="xs" align="flex-start">
@@ -193,6 +193,7 @@ export default function PricingPlans() {
 				</Text>
 			</Group>
 
+
 			{/* ---------- Free Plan Card (separate) ---------- */}
 			{/* Free Plan */}
 			<Card
@@ -208,7 +209,7 @@ export default function PricingPlans() {
 			>
 				<Group align="center" gap="1" wrap="nowrap" >
 					{/* Left Side (Plan Info) */}
-					<Stack  align="flex-start" gap="1">
+					<Stack align="flex-start" gap="1">
 						<Text fw={700} size="lg" c="teal.6">
 							{freePlan.name}
 						</Text>
@@ -242,6 +243,6 @@ export default function PricingPlans() {
 					</Group>
 				</Group>
 			</Card>
-			</Stack>
+		</Stack>
 	);
 }
