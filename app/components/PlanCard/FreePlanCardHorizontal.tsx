@@ -1,8 +1,17 @@
 import { Card, Group, Button, Text, Stack } from "@mantine/core";
 import { CheckCircleIcon, LightningIcon } from "@phosphor-icons/react";
-import  freePlan  from "../../pricing/page"
+import  FreePlan  from "../../pricing/page"
 import React from "react";
 
+export interface FreePlan {
+	name: string;
+	monthly: string;
+	yearly: string;
+	previousYearly?: string;
+	description: string[];
+	features: string[];
+	highlight?: boolean;
+};
 // ✅ Type for Free Plan
 
 
@@ -57,7 +66,7 @@ const FreePlanCardHorizontal= (
 
         {/* Button */}
         <Button
-          variant="light"
+          variant="outline"
           color="#087A68"
           leftSection={<LightningIcon size={18} color="#087A68" weight="thin" />}
           style={{ backgroundColor: "white", marginLeft: 50 }}
@@ -71,3 +80,4 @@ const FreePlanCardHorizontal= (
 	
 
 export default FreePlanCardHorizontal
+

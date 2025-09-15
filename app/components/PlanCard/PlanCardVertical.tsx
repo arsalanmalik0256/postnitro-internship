@@ -79,8 +79,12 @@ const PlanCardVertical = (
                 <Box mt={10} w="100%">
                     <Button
                         fullWidth
-                        leftSection={<LightningIcon size={20} color="white" weight="thin" />}
-                        style={{ backgroundColor: "#087A68" }}
+                        leftSection={<LightningIcon size={20} />}
+                        style={{
+                            backgroundColor: plan.highlight ? "#087A68" : "transparent", // middle green, others transparent
+                            color: plan.highlight ? "white" : "#087A68", // middle white text, others green text
+                            border: plan.highlight ? "none" : "2px solid #087A68", // border only for non-highlight
+                        }}
                     >
                         Get Started
                     </Button>
