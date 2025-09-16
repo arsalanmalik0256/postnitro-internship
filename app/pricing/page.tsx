@@ -1,11 +1,13 @@
 "use client";
 import React, { useState } from "react";
-import { Stack, Text, Card, Group, Button, Badge, SegmentedControl, Box, SimpleGrid, Center, Table, Menu, ActionIcon, Divider } from "@mantine/core";
-
+import { Stack, Text, Group, Button, Badge, SegmentedControl, SimpleGrid, Table, } from "@mantine/core";
+import OfferCard from "../components/Offers/OfferCard"
 import PlanCardVertical from "../components/PlanCard/PlanCardVertical"
 import FreePlanCardHorizontal from "../components/PlanCard/FreePlanCardHorizontal";
-import { ArrowRightIcon } from "@phosphor-icons/react";
-import { IconDots, IconEye, IconFileZip, IconTrash } from "@tabler/icons-react";
+import { ArrowRightIcon, } from "@phosphor-icons/react";
+import PlanComparisonTable from "../components/Table/ PlanComparisonTable";
+import { planNames, comparisonRows } from "../components/Table/deta/PlanComparisonData";
+
 
 
 // ✅ Type for Plan data
@@ -81,43 +83,54 @@ const freePlan: Plan = {
 	description: ["To help you get started.",],
 	features: ["Access to GPT-4o-Mini", "Access to basic templates", "5 download per month"],
 };
-const planNames = ["Free", "Starter Plan", "Creator Plan", "Teams Plan"];
-const comparisonRows: {
-	type: "section" | "data";
-	label: string;
-	values?: string[];
-}[] = [
-		{ type: "section", label: "OVERVIEW" },
-		{ type: "data", label: "Plan Name", values: ["Free", "Starter", "Creater", "Team"] },
-		{ type: "data", label: "Price", values: ["$0", "$10/month", "$20/month", "$50/month"] },
-		{ type: "data", label: "Type", values: ["Free", "Recurring", "Recurring", "Recurring"] },
-		{ type: "section", label: "PLAN LIMITS" },
-		{ type: "data", label: "Workspace", values: ["1", "1", "1", "5"] },
-		{ type: "data", label: "Downloads", values: ["5/month", "30/month", "Unlimited", "Unlimited"] },
-		{ type: "data", label: "Team Members (Users)", values: ["1", "1", "1", "5"] },
-		{ type: "data", label: "Custom Templates", values: ["0", "1", "5", "15"] },
-		{ type: "data", label: "Branding", values: ["1", "2", "5", "15"] },
-		{ type: "data", label: "Custom Color Presets", values: ["0", "2", "5", "15"] },
-		{ type: "data", label: "AI Configuration Presets", values: ["0", "2", "5", "15"] },
-		{ type: "data", label: "AI Generated Slides per Carousel", values: ["5", "8", "15", "20"] },
-		{ type: "data", label: "AI Generated Images", values: ["0", "5", "50/month", "10/month"] },
-		{ type: "data", label: "Downloads", values: ["5/month", "30/month", "unlimited", "unlimited"] },
-		{ type: "section", label: "FEATURES" },
-		{ type: "data", label: "Watermark", values: ["✅", "✅", "❌", "✅"] },
-		{ type: "data", label: "GPT 4o Mini", values: ["✅", "✅", "✅", "✅"] },
-		{ type: "data", label: "GPT 4o", values: ["❌", "❌", "✅", "✅"] },
-		{ type: "data", label: "GPT 4", values: ["❌", "❌", "✅", "✅"] },
-		{ type: "data", label: "Claude Haiku", values: ["❌", "✅", "✅", "✅"] },
-		{ type: "data", label: "Claude Sonnet", values: ["❌", "❌", "✅", "✅"] },
-		{ type: "data", label: "Claude Opus", values: ["❌", "❌", "✅", "✅"] },
-		{ type: "data", label: "Custom Template", values: ["❌", "✅", "✅", "✅"] },
-		{ type: "data", label: "Upload Custom Fonts", values: ["❌", "✅", "✅", "✅"] },
-		{ type: "data", label: "ustom Font Sizing", values: ["❌", "✅", "✅", "✅"] },
-		{ type: "data", label: "Custom Watermarks", values: ["❌", "✅", "✅", "✅"] },
-		{ type: "data", label: "CTA QR Code", values: ["❌", "✅", "✅", "✅"] },
-		{ type: "data", label: "Integrationse", values: ["❌", "✅", "✅", "✅"] },
-	];
 
+const offers = [
+	{
+		title: "CIRCLEBOOM",
+		description:
+			<>
+				Streamline your social media management with Circleboom's comprehensive solution. Perfect <br />
+				for individuals, small businesses, and corporations, it enables seamless planning, scheduling, <br />
+				and automation across Instagram, Facebook, Twitter, Pinterest, LinkedIn, and Google Business <br />
+				Profile from a single dashboard.
+			</>,
+		footer: "Exclusive 30% discount on all plans for paid PostNitro users!",
+		buttonText: "Explore Platform"
+	},
+	{
+		title: "Content Studio",
+		description:
+			<>
+				A powerful social media management platform that helps you discover, plan, create, and <br />
+				distribute content across all major social networks. Transform your content workflow with AI- <br />
+				powered features, advanced scheduling, and comprehensive analytics to maximize your <br />
+				social media impact.</>,
+		footer: "Exclusive 30% discount on all plans for paid PostNitro users!",
+		buttonText: "Explore Platform"
+	},
+	{
+		title: "radar",
+		description:
+			<>
+				An intuitive social media management tool that simplifies your digital presence. Schedule posts, <br />
+				monitor engagement, and analyze performance across multiple platforms. Perfect for teams  <br />
+				looking to streamline their social media workflow and boost their online presence.</>,
+		footer: "Exclusive 30% discount on all plans for paid PostNitro users!",
+		buttonText: "Explore Platform"
+	},
+	{
+		title: "Publer",
+		description:
+			<>
+				Your all-in-one social media scheduling powerhouse. From bulk scheduling to automated <br />
+				posting calendars, Publer handles it all. Enhanced with signature and logo automation features,  <br />
+				it helps maintain consistent brand presence across Facebook, Instagram, TikTok, Twitter,  <br />
+				LinkedIn, Pinterest, and more.
+			</>,
+		footer: "Exclusive 30% discount on all plans for paid PostNitro users!",
+		buttonText: "Explore Platform"
+	},
+];
 
 export default function PricingPlans() {
 	// ✅ State for billing cycle toggle (monthly / yearly)
@@ -125,7 +138,8 @@ export default function PricingPlans() {
 
 	return (
 		<>
-		// outer stack: vertical layout for entire pricing section//
+
+			{/* Outer Stack: vertical layout for entire pricing section*/}
 			<Stack
 				gap={10}
 				align="center"
@@ -243,17 +257,17 @@ export default function PricingPlans() {
 			<Stack>
 				<Text
 					ta="center"
-					c="teal.6"
-					fw={600}
+					c="teal.9"
+					fw={550}
 				>
 					Find the Perfect Plan for Your Social Media Success
 				</Text>
 
 				<Text
 					ta="center"
-					fw={700}
+					fw={600}
 					style={
-						{ fontSize: "2rem" }
+						{ fontSize: "2.5rem" }
 					}
 				>
 					PostNitro Plan Comparison
@@ -273,70 +287,10 @@ export default function PricingPlans() {
 
 						}
 					}>
-					<Table
-						horizontalSpacing="xl"
-						verticalSpacing="sm"
-						withColumnBorders
-						striped
-						highlightOnHover
-					>
-						{/* Plan Names Row (Green) */}
-						<Table.Thead>
-							<Table.Tr>
-								<Table.Th>
-
-								</Table.Th>
-								{planNames.map((plan) => (
-									<Table.Th
-										key={plan}
-										style={
-											{
-												color: "green",
-												fontWeight: 700
-											}
-										}>
-										{plan}
-									</Table.Th>
-								))}
-							</Table.Tr>
-						</Table.Thead>
-
-						{/* Table Body */}
-						<Table.Tbody>
-							{comparisonRows.map((row, idx) =>
-								row.type === "section" ? (
-									<Table.Tr
-										key={idx}>
-										<Table.Td
-											colSpan={planNames.length + 1}
-											style={
-												{
-													color: "green",
-													fontWeight: 700,
-													textAlign: "left"
-												}}
-										>
-
-											{row.label}
-										</Table.Td>
-									</Table.Tr>
-								) : (
-									<Table.Tr
-										key={idx}>
-										<Table.Td>
-											{row.label}
-										</Table.Td>
-										{row.values!.map((val, i) => (
-											<Table.Td
-												key={i}>
-												{val}
-											</Table.Td>
-										))}
-									</Table.Tr>
-								)
-							)}
-						</Table.Tbody>
-					</Table>
+					<PlanComparisonTable
+						planNames={planNames}
+						comparisonRows={comparisonRows}
+					/>
 					<Button
 						ta="left"
 						rightSection={<
@@ -349,9 +303,15 @@ export default function PricingPlans() {
 						Lets start with the free plan
 					</Button>
 					<Text
+						style={
+							{
+								fontSize: "1.5rem",
+								marginBottom: "20px"
+							}
+						}
 						ta="center"
-						c="teal.6"
-						fw={600}
+						c="teal.9"
+						fw={500}
 					>
 						Exclusive Partner Benefits
 					</Text>
@@ -359,25 +319,52 @@ export default function PricingPlans() {
 						ta="center"
 						fw={700}
 						style={
-							{ fontSize: "2rem" }
+							{
+								fontSize: "2.5rem",
+								marginBottom: "20px"
+							}
 						}
 					>
 						Offers From Our Embed Partners
 					</Text>
 					<Text
+						style={{ marginBottom: "40px" }}
 						c="dimmed"
 						ta="center">
-						Unlock special discounts on leading social media management platforms with your paid PostNitro  <br />
+						Unlock special discounts on leading social media management platforms with your paid PostNitro
+						<br />
 						subscription. Enhance your social media strategy with our trusted partners.
-						Circleboom logo
+
 					</Text>
-					
+					<SimpleGrid
+						cols={2}
+						spacing="lg"
+						verticalSpacing="lg">
+						{offers.map((offer, idx) => (
+							<OfferCard
+								key={idx}
+								title={offer.title}
+								description={offer.description}
+								footer={offer.footer}
+								buttonText={offer.buttonText}
+							/>
+						))}
+					</SimpleGrid>
+					<Button
+						ta="left"
+						rightSection={<
+							ArrowRightIcon size={20}
+							color="white"
+						/>}
+						variant="filled"
+						color="teal.9"
+						mt="md"
+					>
+						Get Started With PostNitro
+					</Button>
+
 
 				</div>
-
-
-
-
 			</Stack>
 		</>
 	);
