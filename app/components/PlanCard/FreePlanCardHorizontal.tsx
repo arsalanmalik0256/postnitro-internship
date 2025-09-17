@@ -1,6 +1,5 @@
 import { Card, Group, Button, Text, Stack } from "@mantine/core";
 import { CheckCircleIcon, LightningIcon } from "@phosphor-icons/react";
-import  FreePlan  from "../../pricing/page"
 import React from "react";
 
 export interface FreePlan {

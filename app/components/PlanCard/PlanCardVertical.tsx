@@ -1,7 +1,7 @@
 import { Card, Group, Button, Text, Stack, Box } from "@mantine/core"
 import { CheckCircleIcon, LightningIcon } from "@phosphor-icons/react"
 import React from "react"
-import { Plan } from "../../pricing/page"
+import { Plan } from "../../[locale]/pricing/page"
 
 
 const PlanCardVertical = (
@@ -10,7 +10,7 @@ const PlanCardVertical = (
         billingCycle
     }: {
         plan: Plan,
-        billingCycle: string
+        billingCycle: "monthly" | "yearly";
     }) => {
     return (
         <Card
@@ -52,13 +52,13 @@ const PlanCardVertical = (
                 </Text>
 
                 {/* ✅ Small description text */}
-                {plan.description.map((line, i) => (
+                {plan.description.map((line: string, i: number) => (
                     <Text
-                        key={i}
-                        fw={i === 0 ? 700 : 400}          // bold first line only
-                        size={i === 0 ? "md" : "sm"}      // bigger first line
-                        c={i === 0 ? "teal.9" : "gray"}    // black first line, gray others
-                        style={{ display: "block" }}      // forces new line
+                        key={`${plan.name}-desc-${i}`} // make key unique per plan + index
+                        fw={i === 0 ? 700 : 400}
+                        size={i === 0 ? "md" : "sm"}
+                        c={i === 0 ? "teal.9" : "gray"}
+                        style={{ display: "block" }}
                     >
                         {line}
                     </Text>
@@ -67,8 +67,12 @@ const PlanCardVertical = (
 
                 {/* ✅ Features list with check icon */}
                 <Stack gap={2} mt={5} align="flex-start">
-                    {plan.features.map((feature) => (
-                        <Group key={feature} gap={6} align="center">
+                    {plan.features.map((feature: string, index: number) => (
+                        <Group
+                            key={`${plan.name}-feature-${index}`} // make key unique per plan + index
+                            gap={6}
+                            align="center"
+                        >
                             <CheckCircleIcon size={20} weight="thin" color="#087A68" />
                             <Text size="sm">{feature}</Text>
                         </Group>

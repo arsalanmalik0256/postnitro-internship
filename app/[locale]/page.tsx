@@ -3,9 +3,11 @@
 import { Badge, Button, Center, Divider, Group, Stack, Text } from '@mantine/core';
 import { ArrowRightIcon, Check, StarIcon } from '@phosphor-icons/react';
 import React from 'react';
+import {useTranslations} from 'next-intl';
 
 
 export default function Herosection() {
+	const t = useTranslations('HomePage');
 	return (
 		<Center 
 		style={{backgroundImage: `url("grid-box.svg")`}}
@@ -19,7 +21,7 @@ export default function Herosection() {
 
 				<Badge variant="dot"
 					color="blue">
-					AI-Powered Carousel Generator for Viral Content
+					   {t('badge')}
 				</Badge>
 
 				<Text size="2rem"
@@ -28,7 +30,7 @@ export default function Herosection() {
 					variant="gradient"
 					gradient={{ from: 'rgba(0, 0, 0, 0.62)', to: 'rgba(0, 0, 0, 1)', deg: 0 }}
 				>
-					AI-Powered Carousel Generator for Instagram, LinkedIn
+					{t('heroTitle')}
 
 				</Text>
 
@@ -38,19 +40,15 @@ export default function Herosection() {
 					variant="gradient"
 					gradient={{ from: 'rgba(0, 0, 0, 0.62)', to: 'rgba(0, 0, 0, 1)', deg: 0 }}
 				>
-					& More
+					{t('heroSubtitle')}
 
 				</Text>
 
 				<Text
 					size="xs">
 					{/*fsgsfg*/}
-					PostNitro's AI-powered platform creates stunning carousels for Instagram, LinkedIn, TikTok, and more. Boost your social media engagement with customizable, brand-
-				</Text>
-				<Text
-					size="xs">
-					{/*fsgsfg*/}
-					aligned content generated in minutes.
+					
+					{t('description1')}
 				</Text>
 
 				<Group align="center"
@@ -91,7 +89,7 @@ export default function Herosection() {
 									fontSize: "12px",
 									color: "#666"
 								}}>
-									Join 32,000+ Creators</text>
+									{t('joinCreators')}</text>
 							</div>
 						</div>
 					</div>
@@ -101,12 +99,12 @@ export default function Herosection() {
 
 					<Stack gap={2}
 						align="center">
-						<Text fw={700}>Embedded Into
+						<Text fw={700}>{t('embeddedInto')}
 						</Text>
 
 						<Text size="sm"
 							c="dimmed">
-							40+SMM Platforms
+							  {t('platforms')}
 						</Text>
 					</Stack>
 					<img
@@ -124,13 +122,12 @@ export default function Herosection() {
 						<ArrowRightIcon size={20} color="white" weight="bold" />
 					}
 				>
-					Start Creating Free Carousels
-
+					{t('cta')}
 				</Button>
 				<Group>
 					<Check size={20} color="black" weight="thin" />
 					<Text size="sm" c="dimmed">
-						No Credit Card Required | Free Downloads Every Month
+					{t('footerNote')}
 					</Text>
 				</Group>
 
