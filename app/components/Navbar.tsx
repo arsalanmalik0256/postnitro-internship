@@ -4,7 +4,7 @@ import React from 'react';
 import { Group, Menu, Button, Badge } from '@mantine/core';
 import { CaretDownIcon, SparkleIcon } from '@phosphor-icons/react';
 import { IconSettings, IconMessageCircle, IconPhoto } from '@tabler/icons-react';
-// import LanguageSwitcher from './LanguageSwitcher';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Navbar: React.FC = () => {
 	return (
@@ -150,7 +150,7 @@ const Navbar: React.FC = () => {
 			{/* Right controls in one line */}
 			<Group
 				style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-				{/* <LanguageSwitcher /> */}
+				<LanguageSwitcher />
 				<Button
 					variant="default"
 					color="#087A68"
@@ -165,6 +165,7 @@ const Navbar: React.FC = () => {
 				>
 					Create Image Post
 				</Button>
+
 				<Button
 					variant="filled"
 					size="sm"

@@ -1,5 +1,5 @@
 import { Card, Text, Button } from "@mantine/core";
-import { ArrowLineUpRight,  } from "@phosphor-icons/react";
+import { ArrowLineUpRightIcon  } from "@phosphor-icons/react";
 
 
 interface OfferCardProps {
@@ -37,7 +37,7 @@ const OfferCard = (
         <Button
           mt="sm"
           variant="default"
-          rightSection={<ArrowLineUpRight size={20} weight="thin" color="black" />}
+          rightSection={<ArrowLineUpRightIcon size={20} weight="thin" color="black" />}
           fw={700}
           c="black"
         >

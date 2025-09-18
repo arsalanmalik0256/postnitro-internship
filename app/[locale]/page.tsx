@@ -3,28 +3,25 @@
 import { Badge, Button, Center, Divider, Group, Stack, Text } from '@mantine/core';
 import { ArrowRightIcon, Check, StarIcon } from '@phosphor-icons/react';
 import React from 'react';
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
 
 
 export default function Herosection() {
 	const t = useTranslations('HomePage');
 	return (
-		<Center 
-		style={{backgroundImage: `url("grid-box.svg")`}}
-		h={"100vh"}>
-			<Stack align="center"
-				justify="center">
-
-
-
-
-
-				<Badge variant="dot"
-					color="blue">
-					   {t('badge')}
+		<Center
+			style={{ backgroundImage: `url("grid-box.svg")` }}
+			h={"100vh"}>
+			<Stack
+				align="center"
+				justify="center"
+			>
+				<Badge variant="dot" color="blue">
+					{t('badge')}
 				</Badge>
 
-				<Text size="2rem"
+				<Text
+					size="2rem"
 					lineClamp={2}
 					fw={900}
 					variant="gradient"
@@ -34,7 +31,7 @@ export default function Herosection() {
 
 				</Text>
 
-				<Text size="xl"
+				<Text size="2rem"
 
 					fw={900}
 					variant="gradient"
@@ -47,9 +44,17 @@ export default function Herosection() {
 				<Text
 					size="xs">
 					{/*fsgsfg*/}
-					
+
 					{t('description1')}
 				</Text>
+
+				<Text
+					size="xs">
+					{/*fsgsfg*/}
+
+					{t('description2')}
+				</Text>
+
 
 				<Group align="center"
 					gap="sm">
@@ -85,11 +90,12 @@ export default function Herosection() {
 								</div>
 
 								{/* Text below stars */}
-								<text style={{
+								<Text 
+								style={{
 									fontSize: "12px",
 									color: "#666"
 								}}>
-									{t('joinCreators')}</text>
+									{t('joinCreators')}</Text>
 							</div>
 						</div>
 					</div>
@@ -104,7 +110,7 @@ export default function Herosection() {
 
 						<Text size="sm"
 							c="dimmed">
-							  {t('platforms')}
+							{t('platforms')}
 						</Text>
 					</Stack>
 					<img
@@ -127,7 +133,7 @@ export default function Herosection() {
 				<Group>
 					<Check size={20} color="black" weight="thin" />
 					<Text size="sm" c="dimmed">
-					{t('footerNote')}
+						{t('footerNote')}
 					</Text>
 				</Group>
 

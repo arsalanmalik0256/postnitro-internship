@@ -30,21 +30,12 @@ export default function RootLayout(props: RootLayoutProps) {
   const {
     children
   } = props;
- console.log("6+5+654+6",locale)
   const messages = useMessages()
 
   return (
-    <html lang={locale} {...mantineHtmlProps}>
-      <head>
-        <ColorSchemeScript />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
-        />
-      </head>
+
+    <html lang={locale}>
       <body>
-        {/* ✅ added locale + messages */}
         <NextIntlClientProvider locale={locale} messages={messages}>
           <MantineProvider theme={theme}>
             <Navbar />

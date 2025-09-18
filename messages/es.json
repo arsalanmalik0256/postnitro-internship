@@ -1,1 +1,128 @@
-{}
+{
+    "HomePage": {
+        "badge": "Generador de Carruseles con IA para Contenido Viral",
+        "heroTitle": "Generador de Carruseles con IA para Instagram, ",
+        "heroSubtitle": "LinkedIn y más",
+        "description1": "La plataforma con IA de PostNitro crea carruseles impresionantes para Instagram, LinkedIn, TikTok y más. Impulsa tu engagement en redes sociales ",
+        "description2": "con contenido personalizable y alineado a tu marca en minutos.",
+        "joinCreators": "Únete a más de 32,000 creadores",
+        "embeddedInto": "Integrado en",
+        "platforms": "40+ Plataformas de SMM",
+        "cta": "Empieza a crear carruseles gratis",
+        "footerNote": "No se requiere tarjeta de crédito | Descargas gratis cada mes"
+    },
+    "pricing": {
+        "header": {
+            "title": "Planes para tus necesidades de creación de carruseles",
+            "subtitle": "Desde creadores individuales hasta agencias, tenemos un plan que se adapta a tus requisitos."
+        },
+        "billing": {
+            "monthly": "Mensual",
+            "yearly": "Anual",
+            "discountBadge": "¡30% DE DESCUENTO EN SUSCRIPCIÓN ANUAL! - ANNUAL30OFF"
+        },
+        "plans": {
+            "starter": {
+                "name": "PLAN STARTER",
+                "monthly": "$10/mes",
+                "yearly": "$8/mes",
+                "previousYearly": "$10/mes",
+                "description": [
+                    "Perfecto para comenzar."
+                ],
+                "features": [
+                    "Exportaciones sin marca de agua",
+                    "Acceso a modelos básicos de IA",
+                    "30 descargas/mes",
+                    "8 diapositivas generadas por IA por carrusel"
+                ]
+            },
+            "solopreneur": {
+                "name": "PLAN SOLOPRENEUR",
+                "monthly": "$20/mes",
+                "yearly": "$10/mes",
+                "previousYearly": "$20/mes",
+                "description": [
+                    "Ahorra $120 al año.",
+                    "Perfecto para creadores individuales."
+                ],
+                "features": [
+                    "Exportaciones sin marca de agua",
+                    "Acceso a modelos avanzados de IA",
+                    "15 diapositivas generadas por IA por carrusel",
+                    "Hasta 5 marcas",
+                    "Descargas ilimitadas",
+                    "Acceso a todas las plantillas",
+                    "Paletas de colores personalizadas",
+                    "Crea plantillas personalizadas"
+                ]
+            },
+            "team": {
+                "name": "PLAN TEAM",
+                "monthly": "$50/mes",
+                "yearly": "$25/mes",
+                "previousYearly": "$50/mes",
+                "description": [
+                    "Ahorra $120 al año.",
+                    "Perfecto para equipos."
+                ],
+                "features": [
+                    "100 imágenes generadas por IA al mes",
+                    "Hasta 5 espacios de trabajo",
+                    "Hasta 20 diapositivas por carrusel",
+                    "15 plantillas personalizadas"
+                ]
+            },
+            "freePlan": {
+                "name": "Plan Gratis",
+                "monthly": "$0/mes",
+                "yearly": "$0/mes",
+                "description": [
+                    "Para ayudarte a comenzar."
+                ],
+                "features": [
+                    "Acceso a GPT-4o-Mini",
+                    "Acceso a plantillas básicas",
+                    "5 descargas al mes"
+                ]
+            },
+            "freePlanButton": "Comencemos con el plan gratis"
+        },
+        "additionalInfo": {
+            "addonText": "si necesitas límites adicionales, puedes",
+            "addonHighlight": "agregarlos como complementos",
+            "addonTextSuffix": "a tu suscripción."
+        },
+        "planComparison": {
+            "cta": "Encuentra el plan perfecto para tu éxito en redes sociales",
+            "title": "Comparación de Planes de PostNitro",
+            "subtitle": "Compara nuestros planes lado a lado para descubrir cuál se adapta mejor a tus necesidades de creación de carruseles."
+        },
+        "partners": {
+            "title": "Beneficios exclusivos para socios",
+            "subtitle": "Ofertas de nuestros socios integrados",
+            "description": "Desbloquea descuentos especiales en las principales plataformas de gestión de redes sociales con tu suscripción paga de PostNitro. Mejora tu estrategia en redes sociales con nuestros socios de confianza.",
+            "cta": "Empieza con PostNitro"
+        },
+        "offers": {
+            "circleboom": {
+                "title": "CIRCLEBOOM",
+                "description": "Optimiza tu gestión de redes sociales con la solución integral de Circleboom. Perfecto para individuos, pequeñas empresas y corporaciones, permite planificar, programar y automatizar en Instagram, Facebook, Twitter, Pinterest, LinkedIn y Google Business Profile desde un solo panel."
+            },
+            "contentStudio": {
+                "title": "Content Studio",
+                "description": "Una poderosa plataforma de gestión de redes sociales que te ayuda a descubrir, planificar, crear y distribuir contenido en todas las principales redes. Transforma tu flujo de trabajo con funciones impulsadas por IA, programación avanzada y análisis completos para maximizar tu impacto en redes sociales."
+            },
+            "radar": {
+                "title": "radar",
+                "description": "Una herramienta intuitiva de gestión de redes sociales que simplifica tu presencia digital. Programa publicaciones, monitorea la interacción y analiza el rendimiento en múltiples plataformas. Perfecta para equipos que buscan optimizar su flujo de trabajo y aumentar su presencia en línea."
+            },
+            "publer": {
+                "title": "Publer",
+                "description": "Tu solución todo en uno para la programación de redes sociales. Desde programación masiva hasta calendarios automáticos de publicaciones, Publer lo maneja todo. Con funciones de automatización de firmas y logotipos, ayuda a mantener una presencia de marca consistente en Facebook, Instagram, TikTok, Twitter, LinkedIn, Pinterest y más."
+            },
+            "footer": "¡30% de descuento exclusivo en todos los planes para usuarios pagos de PostNitro!",
+            "button": "Explorar Plataforma"
+        }
+    }
+}

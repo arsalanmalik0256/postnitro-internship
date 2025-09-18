@@ -1,128 +1,128 @@
 {
-  "HomePage": {
-    "badge": "AI-Powered Carousel Generator for Viral Content",
-    "heroTitle": "AI-Powered Carousel Generator for Instagram, LinkedIn",
-    "heroSubtitle": "& More",
-    "description1": "PostNitro's AI-powered platform creates stunning carousels for Instagram, LinkedIn, TikTok, and more. Boost your social media engagement with customizable, brand-aligned content generated in minutes.",
-    "description2": "Aligned content generated in minutes.",
-    "joinCreators": "Join 32,000+ Creators",
-    "embeddedInto": "Embedded Into",
-    "platforms": "40+ SMM Platforms",
-    "cta": "Start Creating Free Carousels",
-    "footerNote": "No Credit Card Required | Free Downloads Every Month"
-  },
-  "pricing": {
-    "header": {
-      "title": "Plans for Your Carousel Creation Needs",
-      "subtitle": "From solo creators to agencies, we have a plan that fits your requirements."
+    "HomePage": {
+        "badge": "AI-Powered Carousel Generator for Viral Content",
+        "heroTitle": "AI-Powered Carousel Generator for Instagram, ",
+        "heroSubtitle": "LinkedIn & More",
+        "description1": "PostNitro's AI-powered platform creates stunning carousels for Instagram, LinkedIn, TikTok, and more. Boost your social media engagement ",
+        "description2": "with customizable, brand-aligned content generated in minutes.",
+        "joinCreators": "Join 32,000+ Creators",
+        "embeddedInto": "Embedded Into",
+        "platforms": "40+ SMM Platforms",
+        "cta": "Start Creating Free Carousels",
+        "footerNote": "No Credit Card Required | Free Downloads Every Month"
     },
-    "billing": {
-      "monthly": "Monthly",
-      "yearly": "Yearly",
-      "discountBadge": "30% OFF ON YEARLY SUBSCRIPTION! - ANNUAL30OFF"
-    },
-    "plans": {
-      "starter": {
-        "name": "STARTER PLAN",
-        "monthly": "$10/month",
-        "yearly": "$8/month",
-        "previousYearly": "$10/month",
-        "description": [
-          "Perfect for getting started."
-        ],
-        "features": [
-          "Watermark-free exports",
-          "Access to basic AI models",
-          "30 downloads/month",
-          "8 AI Generated Slides per Carousel"
-        ]
-      },
-      "solopreneur": {
-        "name": "SOLOPRENEUR PLAN",
-        "monthly": "$20/month",
-        "yearly": "$10/month",
-        "previousYearly": "$20/month",
-        "description": [
-          "Saves you $120 per year.",
-          "Perfect for solo creators."
-        ],
-        "features": [
-          "Watermark-free exports",
-          "Access to advanced AI models",
-          "15 AI Generated Slides per Carousel",
-          "Up to 5 Brands",
-          "Unlimited downloads",
-          "Access to all templates",
-          "Custom color palettes",
-          "Create custom templates"
-        ]
-      },
-      "team": {
-        "name": "TEAM PLAN",
-        "monthly": "$50/month",
-        "yearly": "$25/month",
-        "previousYearly": "$50/month",
-        "description": [
-          "Saves you $120 per year.",
-          "Perfect for solo creators."
-        ],
-        "features": [
-          "100 AI generated images per month",
-          "Up to 5 workspaces",
-          "Up to 20 slides per carousel",
-          "15 custom templates"
-        ]
-      },
-      "freePlan": {
-        "name": "Free Plan",
-        "monthly": "$0/month",
-        "yearly": "$0/month",
-        "description": [
-          "To help you get started."
-        ],
-        "features": [
-          "Access to GPT-4o-Mini",
-          "Access to basic templates",
-          "5 download per month"
-        ]
-      },
-      "freePlanButton": "Lets start with the free plan"
-    },
-    "additionalInfo": {
-      "addonText": "if you require additional limits, you can",
-      "addonHighlight": "add them as add-ons",
-      "addonTextSuffix": "to your subscription."
-    },
-    "planComparison": {
-      "cta": "Find the Perfect Plan for Your Social Media Success",
-      "title": "PostNitro Plan Comparison",
-      "subtitle": "Compare our plans side-by-side to discover which PostNitro offering best suits your carousel creation needs."
-    },
-    "partners": {
-      "title": "Exclusive Partner Benefits",
-      "subtitle": "Offers From Our Embed Partners",
-      "description": "Unlock special discounts on leading social media management platforms with your paid PostNitro subscription. Enhance your social media strategy with our trusted partners.",
-      "cta": "Get Started With PostNitro"
-    },
-    "offers": {
-      "circleboom": {
-        "title": "CIRCLEBOOM",
-        "description": "Streamline your social media management with Circleboom's comprehensive solution. Perfect for individuals, small businesses, and corporations, it enables seamless planning, scheduling, and automation across Instagram, Facebook, Twitter, Pinterest, LinkedIn, and Google Business Profile from a single dashboard."
-      },
-      "contentStudio": {
-        "title": "Content Studio",
-        "description": "A powerful social media management platform that helps you discover, plan, create, and distribute content across all major social networks. Transform your content workflow with AI-powered features, advanced scheduling, and comprehensive analytics to maximize your social media impact."
-      },
-      "radar": {
-        "title": "radar",
-        "description": "An intuitive social media management tool that simplifies your digital presence. Schedule posts, monitor engagement, and analyze performance across multiple platforms. Perfect for teams looking to streamline their social media workflow and boost their online presence."
-      },
-      "publer": {
-        "title": "Publer",
-        "description": "Your all-in-one social media scheduling powerhouse. From bulk scheduling to automated posting calendars, Publer handles it all. Enhanced with signature and logo automation features, it helps maintain consistent brand presence across Facebook, Instagram, TikTok, Twitter, LinkedIn, Pinterest, and more."
-      },
-      "footer": "Exclusive 30% discount on all plans for paid PostNitro users!",
-      "button": "Explore Platform"
+    "pricing": {
+        "header": {
+            "title": "Plans for Your Carousel Creation Needs",
+            "subtitle": "From solo creators to agencies, we have a plan that fits your requirements."
+        },
+        "billing": {
+            "monthly": "Monthly",
+            "yearly": "Yearly",
+            "discountBadge": "30% OFF ON YEARLY SUBSCRIPTION! - ANNUAL30OFF"
+        },
+        "plans": {
+            "starter": {
+                "name": "STARTER PLAN",
+                "monthly": "$10/month",
+                "yearly": "$8/month",
+                "previousYearly": "$10/month",
+                "description": [
+                    "Perfect for getting started."
+                ],
+                "features": [
+                    "Watermark-free exports",
+                    "Access to basic AI models",
+                    "30 downloads/month",
+                    "8 AI Generated Slides per Carousel"
+                ]
+            },
+            "solopreneur": {
+                "name": "SOLOPRENEUR PLAN",
+                "monthly": "$20/month",
+                "yearly": "$10/month",
+                "previousYearly": "$20/month",
+                "description": [
+                    "Saves you $120 per year.",
+                    "Perfect for solo creators."
+                ],
+                "features": [
+                    "Watermark-free exports",
+                    "Access to advanced AI models",
+                    "15 AI Generated Slides per Carousel",
+                    "Up to 5 Brands",
+                    "Unlimited downloads",
+                    "Access to all templates",
+                    "Custom color palettes",
+                    "Create custom templates"
+                ]
+            },
+            "team": {
+                "name": "TEAM PLAN",
+                "monthly": "$50/month",
+                "yearly": "$25/month",
+                "previousYearly": "$50/month",
+                "description": [
+                    "Saves you $120 per year.",
+                    "Perfect for solo creators."
+                ],
+                "features": [
+                    "100 AI generated images per month",
+                    "Up to 5 workspaces",
+                    "Up to 20 slides per carousel",
+                    "15 custom templates"
+                ]
+            },
+            "freePlan": {
+                "name": "Free Plan",
+                "monthly": "$0/month",
+                "yearly": "$0/month",
+                "description": [
+                    "To help you get started."
+                ],
+                "features": [
+                    "Access to GPT-4o-Mini",
+                    "Access to basic templates",
+                    "5 download per month"
+                ]
+            },
+            "freePlanButton": "Lets start with the free plan"
+        },
+        "additionalInfo": {
+            "addonText": "if you require additional limits, you can",
+            "addonHighlight": "add them as add-ons",
+            "addonTextSuffix": "to your subscription."
+        },
+        "planComparison": {
+            "cta": "Find the Perfect Plan for Your Social Media Success",
+            "title": "PostNitro Plan Comparison",
+            "subtitle": "Compare our plans side-by-side to discover which PostNitro offering best suits your carousel creation needs."
+        },
+        "partners": {
+            "title": "Exclusive Partner Benefits",
+            "subtitle": "Offers From Our Embed Partners",
+            "description": "Unlock special discounts on leading social media management platforms with your paid PostNitro subscription. Enhance your social media strategy with our trusted partners.",
+            "cta": "Get Started With PostNitro"
+        },
+        "offers": {
+            "circleboom": {
+                "title": "CIRCLEBOOM",
+                "description": "Streamline your social media management with Circleboom's comprehensive solution. Perfect for individuals, small businesses, and corporations, it enables seamless planning, scheduling, and automation across Instagram, Facebook, Twitter, Pinterest, LinkedIn, and Google Business Profile from a single dashboard."
+            },
+            "contentStudio": {
+                "title": "Content Studio",
+                "description": "A powerful social media management platform that helps you discover, plan, create, and distribute content across all major social networks. Transform your content workflow with AI-powered features, advanced scheduling, and comprehensive analytics to maximize your social media impact."
+            },
+            "radar": {
+                "title": "radar",
+                "description": "An intuitive social media management tool that simplifies your digital presence. Schedule posts, monitor engagement, and analyze performance across multiple platforms. Perfect for teams looking to streamline their social media workflow and boost their online presence."
+            },
+            "publer": {
+                "title": "Publer",
+                "description": "Your all-in-one social media scheduling powerhouse. From bulk scheduling to automated posting calendars, Publer handles it all. Enhanced with signature and logo automation features, it helps maintain consistent brand presence across Facebook, Instagram, TikTok, Twitter, LinkedIn, Pinterest, and more."
+            },
+            "footer": "Exclusive 30% discount on all plans for paid PostNitro users!",
+            "button": "Explore Platform"
+        }
     }
-  }
 }

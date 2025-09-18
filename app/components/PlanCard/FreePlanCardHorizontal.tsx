@@ -3,26 +3,26 @@ import { CheckCircleIcon, LightningIcon } from "@phosphor-icons/react";
 import React from "react";
 
 export interface FreePlan {
-	name: string;
-	monthly: string;
-	yearly: string;
-	previousYearly?: string;
-	description: string[];
-	features: string[];
-	highlight?: boolean;
+  name: string;
+  monthly: string;
+  yearly: string;
+  previousYearly?: string;
+  description: string[];
+  features: string[];
+  highlight?: boolean;
 };
 // ✅ Type for Free Plan
 
 
 
-const FreePlanCardHorizontal= (
-    {
-        freeplan,
-        billingCycle
-    }: {
-        freeplan: FreePlan,
-        billingCycle:  "monthly" | "yearly"
-    }) => {
+const FreePlanCardHorizontal = (
+  {
+    freeplan,
+    billingCycle
+  }: {
+    freeplan: FreePlan,
+    billingCycle: "monthly" | "yearly"
+  }) => {
 
 
   return (
@@ -40,6 +40,7 @@ const FreePlanCardHorizontal= (
       <Group align="center" gap="xl" wrap="nowrap">
         {/* Left Side */}
         <Stack align="flex-start" gap="xs">
+          
           <Text fw={700} size="lg" c="teal.9">
             {freeplan.name}
           </Text>
@@ -53,7 +54,7 @@ const FreePlanCardHorizontal= (
 
         {/* Right Side Features */}
         <Stack gap={6}>
-          {freeplan.features.map((feature :string, index:number) => (
+          {freeplan.features.map((feature: string, index: number) => (
             <Group key={index} gap={6} align="center">
               <CheckCircleIcon size={18} color="#087A68" weight="thin" />
               <Text size="sm" color="black">
@@ -76,7 +77,7 @@ const FreePlanCardHorizontal= (
     </Card>
   );
 };
-	
+
 
 export default FreePlanCardHorizontal
 
